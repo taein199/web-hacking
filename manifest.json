@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "taein",
+  "version": "1.0.0",
+  "description": "Image and Text to taein",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["face.jpg"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
